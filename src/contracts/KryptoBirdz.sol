@@ -5,7 +5,23 @@ import './ERC721Connector.sol';
 
 contract KryptoBird is ERC721Connector {
 
-    
+
+     // array to store our NFTs
+     string[] public kryptoBirdz;
+
+     mapping(string => bool) _kryptoBirdzExist;
+
+     function _mint(string memory _kryptoBird) public {
+
+        require(!_kryptoBirdzExist[_kryptoBird], "Error already exists");
+
+        kryptoBirdz.push(_kryptoBird);
+        uint _id = kryptoBirdz.length -1;
+
+        _mint(msg.sender, _id);
+
+        _kryptoBirdzExist[_kryptoBird] = true;
+     }
 
     constructor ()ERC721Connector('KryptoBird', 'KBIRDZ') {}
 }
