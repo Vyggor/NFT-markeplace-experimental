@@ -11,6 +11,84 @@
     ]
   },
   "files": {
+    "src/contracts/ERC721Metadata.sol": {
+      "lastModificationDate": 1666140445836,
+      "contentHash": "b9497ed1ebbacc2a3d71a96393e8557c",
+      "sourceName": "src/contracts/ERC721Metadata.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC721Metadata": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC721Metadata.sol/ERC721Metadata.json"
+        }
+      }
+    },
+    "src/contracts/KryptoBirdz.sol": {
+      "lastModificationDate": 1666136718549,
+      "contentHash": "20df4ca400da369b62d245cdd4e8eabc",
+      "sourceName": "src/contracts/KryptoBirdz.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "KryptoBird": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "KryptoBirdz.sol/KryptoBird.json"
+        }
+      }
+    },
     "src/contracts/Migrations.sol": {
       "lastModificationDate": 1666113214821,
       "contentHash": "6f89ac436a4454e058bf5177d5282b1f",
