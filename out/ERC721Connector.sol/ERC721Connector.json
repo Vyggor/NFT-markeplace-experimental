@@ -1,0 +1,495 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "symbol",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060405161054b38038061054b83398101604081905261002f9161010f565b8181600061003d83826101fb565b50600161004a82826101fb565b50505050506102ba565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261007b57600080fd5b81516001600160401b038082111561009557610095610054565b604051601f8301601f19908116603f011681019082821181831017156100bd576100bd610054565b816040528381526020925086838588010111156100d957600080fd5b600091505b838210156100fb57858201830151818301840152908201906100de565b600093810190920192909252949350505050565b6000806040838503121561012257600080fd5b82516001600160401b038082111561013957600080fd5b6101458683870161006a565b9350602085015191508082111561015b57600080fd5b506101688582860161006a565b9150509250929050565b600181811c9082168061018657607f821691505b6020821081036101a657634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156101f657600081815260208120601f850160051c810160208610156101d35750805b601f850160051c820191505b818110156101f2578281556001016101df565b5050505b505050565b81516001600160401b0381111561021457610214610054565b610228816102228454610172565b846101ac565b602080601f83116001811461025d57600084156102455750858301515b600019600386901b1c1916600185901b1785556101f2565b600085815260208120601f198616915b8281101561028c5788860151825594840194600190910190840161026d565b50858210156102aa5787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b610282806102c96000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806306fdde031461004657806370a082311461006457806395d89b4114610085575b600080fd5b61004e61008d565b60405161005b9190610194565b60405180910390f35b6100776100723660046101e2565b61011f565b60405190815260200161005b565b61004e610185565b60606000805461009c90610212565b80601f01602080910402602001604051908101604052809291908181526020018280546100c890610212565b80156101155780601f106100ea57610100808354040283529160200191610115565b820191906000526020600020905b8154815290600101906020018083116100f857829003601f168201915b5050505050905090565b60006001600160a01b03821661016f5760405162461bcd60e51b815260206004820152601160248201527063616e742062652030206164647265737360781b604482015260640160405180910390fd5b6001600160a01b03909116600052600360205290565b60606001805461009c90610212565b600060208083528351808285015260005b818110156101c1578581018301518582016040015282016101a5565b506000604082860101526040601f19601f8301168501019250505092915050565b6000602082840312156101f457600080fd5b81356001600160a01b038116811461020b57600080fd5b9392505050565b600181811c9082168061022657607f821691505b60208210810361024657634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220079010bf93f6a06e6d62a6e01ce4942502c5b417d4570ef86b5cb37c7747a83564736f6c63430008110033",
+    "sourceMap": "113:153:1:-:0;;;171:92;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;240:4;247:6;214:5:2;:13;240:4:1;214:5:2;:13;:::i;:::-;-1:-1:-1;237:7:2;:21;247:11;237:7;:21;:::i;:::-;;144:121;;171:92:1;;113:153;;14:127:4;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:840;200:5;253:3;246:4;238:6;234:17;230:27;220:55;;271:1;268;261:12;220:55;294:13;;-1:-1:-1;;;;;356:10:4;;;353:36;;;369:18;;:::i;:::-;444:2;438:9;412:2;498:13;;-1:-1:-1;;494:22:4;;;518:2;490:31;486:40;474:53;;;542:18;;;562:22;;;539:46;536:72;;;588:18;;:::i;:::-;628:10;624:2;617:22;663:2;655:6;648:18;685:4;675:14;;730:3;725:2;720;712:6;708:15;704:24;701:33;698:53;;;747:1;744;737:12;698:53;769:1;760:10;;779:133;793:2;790:1;787:9;779:133;;;881:14;;;877:23;;871:30;850:14;;;846:23;;839:63;804:10;;;;779:133;;;954:1;932:15;;;928:24;;;921:35;;;;936:6;146:840;-1:-1:-1;;;;146:840:4:o;991:562::-;1090:6;1098;1151:2;1139:9;1130:7;1126:23;1122:32;1119:52;;;1167:1;1164;1157:12;1119:52;1194:16;;-1:-1:-1;;;;;1259:14:4;;;1256:34;;;1286:1;1283;1276:12;1256:34;1309:61;1362:7;1353:6;1342:9;1338:22;1309:61;:::i;:::-;1299:71;;1416:2;1405:9;1401:18;1395:25;1379:41;;1445:2;1435:8;1432:16;1429:36;;;1461:1;1458;1451:12;1429:36;;1484:63;1539:7;1528:8;1517:9;1513:24;1484:63;:::i;:::-;1474:73;;;991:562;;;;;:::o;1558:380::-;1637:1;1633:12;;;;1680;;;1701:61;;1755:4;1747:6;1743:17;1733:27;;1701:61;1808:2;1800:6;1797:14;1777:18;1774:38;1771:161;;1854:10;1849:3;1845:20;1842:1;1835:31;1889:4;1886:1;1879:15;1917:4;1914:1;1907:15;1771:161;;1558:380;;;:::o;2069:545::-;2171:2;2166:3;2163:11;2160:448;;;2207:1;2232:5;2228:2;2221:17;2277:4;2273:2;2263:19;2347:2;2335:10;2331:19;2328:1;2324:27;2318:4;2314:38;2383:4;2371:10;2368:20;2365:47;;;-1:-1:-1;2406:4:4;2365:47;2461:2;2456:3;2452:12;2449:1;2445:20;2439:4;2435:31;2425:41;;2516:82;2534:2;2527:5;2524:13;2516:82;;;2579:17;;;2560:1;2549:13;2516:82;;;2520:3;;;2160:448;2069:545;;;:::o;2790:1352::-;2910:10;;-1:-1:-1;;;;;2932:30:4;;2929:56;;;2965:18;;:::i;:::-;2994:97;3084:6;3044:38;3076:4;3070:11;3044:38;:::i;:::-;3038:4;2994:97;:::i;:::-;3146:4;;3210:2;3199:14;;3227:1;3222:663;;;;3929:1;3946:6;3943:89;;;-1:-1:-1;3998:19:4;;;3992:26;3943:89;-1:-1:-1;;2747:1:4;2743:11;;;2739:24;2735:29;2725:40;2771:1;2767:11;;;2722:57;4045:81;;3192:944;;3222:663;2016:1;2009:14;;;2053:4;2040:18;;-1:-1:-1;;3258:20:4;;;3376:236;3390:7;3387:1;3384:14;3376:236;;;3479:19;;;3473:26;3458:42;;3571:27;;;;3539:1;3527:14;;;;3406:19;;3376:236;;;3380:3;3640:6;3631:7;3628:19;3625:201;;;3701:19;;;3695:26;-1:-1:-1;;3784:1:4;3780:14;;;3796:3;3776:24;3772:37;3768:42;3753:58;3738:74;;3625:201;-1:-1:-1;;;;;3872:1:4;3856:14;;;3852:22;3839:36;;-1:-1:-1;2790:1352:4:o;:::-;113:153:1;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806306fdde031461004657806370a082311461006457806395d89b4114610085575b600080fd5b61004e61008d565b60405161005b9190610194565b60405180910390f35b6100776100723660046101e2565b61011f565b60405190815260200161005b565b61004e610185565b60606000805461009c90610212565b80601f01602080910402602001604051908101604052809291908181526020018280546100c890610212565b80156101155780601f106100ea57610100808354040283529160200191610115565b820191906000526020600020905b8154815290600101906020018083116100f857829003601f168201915b5050505050905090565b60006001600160a01b03821661016f5760405162461bcd60e51b815260206004820152601160248201527063616e742062652030206164647265737360781b604482015260640160405180910390fd5b6001600160a01b03909116600052600360205290565b60606001805461009c90610212565b600060208083528351808285015260005b818110156101c1578581018301518582016040015282016101a5565b506000604082860101526040601f19601f8301168501019250505092915050565b6000602082840312156101f457600080fd5b81356001600160a01b038116811461020b57600080fd5b9392505050565b600181811c9082168061022657607f821691505b60208210810361024657634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220079010bf93f6a06e6d62a6e01ce4942502c5b417d4570ef86b5cb37c7747a83564736f6c63430008110033",
+    "sourceMap": "113:153:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;271:83:2;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;782:157:0;;;;;;:::i;:::-;;:::i;:::-;;;1004:25:4;;;992:2;977:18;782:157:0;858:177:4;360:87:2;;;:::i;271:83::-;310:13;342:5;335:12;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;271:83;:::o;782:157:0:-;837:7;-1:-1:-1;;;;;860:20:0;;852:50;;;;-1:-1:-1;;;852:50:0;;1627:2:4;852:50:0;;;1609:21:4;1666:2;1646:18;;;1639:30;-1:-1:-1;;;1685:18:4;;;1678:47;1742:18;;852:50:0;;;;;;;;-1:-1:-1;;;;;911:25:0;;;;;:17;:25;;782:157;:::o;360:87:2:-;401:13;433:7;426:14;;;;;:::i;14:548:4:-;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;298:3;483:1;478:2;469:6;458:9;454:22;450:31;443:42;553:2;546;542:7;537:2;529:6;525:15;521:29;510:9;506:45;502:54;494:62;;;;14:548;;;;:::o;567:286::-;626:6;679:2;667:9;658:7;654:23;650:32;647:52;;;695:1;692;685:12;647:52;721:23;;-1:-1:-1;;;;;773:31:4;;763:42;;753:70;;819:1;816;809:12;753:70;842:5;567:286;-1:-1:-1;;;567:286:4:o;1040:380::-;1119:1;1115:12;;;;1162;;;1183:61;;1237:4;1229:6;1225:17;1215:27;;1183:61;1290:2;1282:6;1279:14;1259:18;1256:38;1253:161;;1336:10;1331:3;1327:20;1324:1;1317:31;1371:4;1368:1;1361:15;1399:4;1396:1;1389:15;1253:161;;1040:380;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "balanceOf(address)": "70a08231",
+    "name()": "06fdde03",
+    "symbol()": "95d89b41"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/ERC721Connector.sol\":\"ERC721Connector\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=node_modules/@openzeppelin/\",\":truffle/=node_modules/truffle/\"]},\"sources\":{\"src/contracts/ERC721.sol\":{\"keccak256\":\"0xfa296d66d3e3d3fda2aaff5d78ae32f8573280c2d2c9055fb47e1d397526ec53\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://04a2db9be32e40e2a6fac063115d42716d1fd24b854de84deed2f2abf760b19e\",\"dweb:/ipfs/QmWGDjNqDYu56mmW1bDTPG9vRdu8AAJG1kpA21HVrkgq9m\"]},\"src/contracts/ERC721Connector.sol\":{\"keccak256\":\"0x17e68a41002b4055c6abf2828058171fdac9ed1bca1a8f6f1fb7d94ed74c0f06\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://436d2c6198aa2500fb85a3ff1b4ea966987234b7c8cd9484f05936c9a511793d\",\"dweb:/ipfs/QmW9T6vtPUqLNiiaYyDqFUVMJki5AUFQYJPJTcCP2YtJX6\"]},\"src/contracts/ERC721Metadata.sol\":{\"keccak256\":\"0x69eb0d70c2673c15e6306f69c4151ff9e231be691a642edcae478753baf24512\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7914b309656495e36e6f0c4e5d3c5d363954b70e81206a409c1c971768198180\",\"dweb:/ipfs/QmY9mjGisJa7DXNBwDokbzsaAswt1qUywVsCSQzojbG9ux\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "symbol",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "Transfer",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_owner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "name",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "symbol",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":truffle/=node_modules/truffle/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/ERC721Connector.sol": "ERC721Connector"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/contracts/ERC721.sol": {
+        "keccak256": "0xfa296d66d3e3d3fda2aaff5d78ae32f8573280c2d2c9055fb47e1d397526ec53",
+        "urls": [
+          "bzz-raw://04a2db9be32e40e2a6fac063115d42716d1fd24b854de84deed2f2abf760b19e",
+          "dweb:/ipfs/QmWGDjNqDYu56mmW1bDTPG9vRdu8AAJG1kpA21HVrkgq9m"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/ERC721Connector.sol": {
+        "keccak256": "0x17e68a41002b4055c6abf2828058171fdac9ed1bca1a8f6f1fb7d94ed74c0f06",
+        "urls": [
+          "bzz-raw://436d2c6198aa2500fb85a3ff1b4ea966987234b7c8cd9484f05936c9a511793d",
+          "dweb:/ipfs/QmW9T6vtPUqLNiiaYyDqFUVMJki5AUFQYJPJTcCP2YtJX6"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/ERC721Metadata.sol": {
+        "keccak256": "0x69eb0d70c2673c15e6306f69c4151ff9e231be691a642edcae478753baf24512",
+        "urls": [
+          "bzz-raw://7914b309656495e36e6f0c4e5d3c5d363954b70e81206a409c1c971768198180",
+          "dweb:/ipfs/QmY9mjGisJa7DXNBwDokbzsaAswt1qUywVsCSQzojbG9ux"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/contracts/ERC721Connector.sol",
+    "id": 130,
+    "exportedSymbols": {
+      "ERC721": [
+        108
+      ],
+      "ERC721Connector": [
+        129
+      ],
+      "ERC721Metadata": [
+        168
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:234:1",
+    "nodes": [
+      {
+        "id": 110,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:1",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 111,
+        "nodeType": "ImportDirective",
+        "src": "58:30:1",
+        "absolutePath": "src/contracts/ERC721Metadata.sol",
+        "file": "./ERC721Metadata.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 130,
+        "sourceUnit": 169,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 112,
+        "nodeType": "ImportDirective",
+        "src": "89:22:1",
+        "absolutePath": "src/contracts/ERC721.sol",
+        "file": "./ERC721.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 130,
+        "sourceUnit": 109,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 129,
+        "nodeType": "ContractDefinition",
+        "src": "113:153:1",
+        "nodes": [
+          {
+            "id": 128,
+            "nodeType": "FunctionDefinition",
+            "src": "171:92:1",
+            "body": {
+              "id": 127,
+              "nodeType": "Block",
+              "src": "255:8:1",
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 123,
+                    "name": "name",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 118,
+                    "src": "240:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  {
+                    "id": 124,
+                    "name": "symbol",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 120,
+                    "src": "247:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  }
+                ],
+                "id": 125,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 122,
+                  "name": "ERC721Metadata",
+                  "nameLocations": [
+                    "225:14:1"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 168,
+                  "src": "225:14:1"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "225:29:1"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 121,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 118,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "197:4:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 128,
+                  "src": "183:18:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 117,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "183:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 120,
+                  "mutability": "mutable",
+                  "name": "symbol",
+                  "nameLocation": "217:6:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 128,
+                  "src": "203:20:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 119,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "203:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "182:42:1"
+            },
+            "returnParameters": {
+              "id": 126,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "255:0:1"
+            },
+            "scope": 129,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 113,
+              "name": "ERC721Metadata",
+              "nameLocations": [
+                "141:14:1"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 168,
+              "src": "141:14:1"
+            },
+            "id": 114,
+            "nodeType": "InheritanceSpecifier",
+            "src": "141:14:1"
+          },
+          {
+            "baseName": {
+              "id": 115,
+              "name": "ERC721",
+              "nameLocations": [
+                "157:6:1"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 108,
+              "src": "157:6:1"
+            },
+            "id": 116,
+            "nodeType": "InheritanceSpecifier",
+            "src": "157:6:1"
+          }
+        ],
+        "canonicalName": "ERC721Connector",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          129,
+          108,
+          168
+        ],
+        "name": "ERC721Connector",
+        "nameLocation": "122:15:1",
+        "scope": 130,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 1
+}

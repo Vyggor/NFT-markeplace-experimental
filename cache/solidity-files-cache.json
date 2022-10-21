@@ -11,6 +11,87 @@
     ]
   },
   "files": {
+    "src/contracts/ERC721.sol": {
+      "lastModificationDate": 1666370009654,
+      "contentHash": "f1e33205e0773fe8402bba517b32ae8d",
+      "sourceName": "src/contracts/ERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC721": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC721.sol/ERC721.json"
+        }
+      }
+    },
+    "src/contracts/ERC721Connector.sol": {
+      "lastModificationDate": 1666205413057,
+      "contentHash": "2137b3e93fd2c2c17e4ec76cc5d8bf0d",
+      "sourceName": "src/contracts/ERC721Connector.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/contracts/ERC721.sol",
+        "src/contracts/ERC721Metadata.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC721Connector": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC721Connector.sol/ERC721Connector.json"
+        }
+      }
+    },
     "src/contracts/ERC721Metadata.sol": {
       "lastModificationDate": 1666140445836,
       "contentHash": "b9497ed1ebbacc2a3d71a96393e8557c",
@@ -51,8 +132,8 @@
       }
     },
     "src/contracts/KryptoBirdz.sol": {
-      "lastModificationDate": 1666136718549,
-      "contentHash": "20df4ca400da369b62d245cdd4e8eabc",
+      "lastModificationDate": 1666206359726,
+      "contentHash": "a14696c5c03f6db4e039b9fbb74fe7eb",
       "sourceName": "src/contracts/KryptoBirdz.sol",
       "solcConfig": {
         "settings": {
@@ -81,7 +162,11 @@
           "libraries": {}
         }
       },
-      "imports": [],
+      "imports": [
+        "src/contracts/ERC721.sol",
+        "src/contracts/ERC721Connector.sol",
+        "src/contracts/ERC721Metadata.sol"
+      ],
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "KryptoBird": {
