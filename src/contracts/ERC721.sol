@@ -48,7 +48,7 @@ function _exists(uint256 tokenId) internal view returns(bool) {
 }
 
 
-function _mint(address to, uint256 tokenId) internal  {
+function _mint(address to, uint256 tokenId) internal virtual {
     require(to != address(0) , 'Cant mint to 0 address ');
    // we require that the function _exists with tokenId is false
     require(!_exists(tokenId), 'This token already mint');
