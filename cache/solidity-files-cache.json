@@ -12,8 +12,8 @@
   },
   "files": {
     "src/contracts/ERC721.sol": {
-      "lastModificationDate": 1666370009654,
-      "contentHash": "f1e33205e0773fe8402bba517b32ae8d",
+      "lastModificationDate": 1666470960254,
+      "contentHash": "c9d739132d6b2b9bddc0cc6c2ac2bb78",
       "sourceName": "src/contracts/ERC721.sol",
       "solcConfig": {
         "settings": {
@@ -51,8 +51,8 @@
       }
     },
     "src/contracts/ERC721Connector.sol": {
-      "lastModificationDate": 1666205413057,
-      "contentHash": "2137b3e93fd2c2c17e4ec76cc5d8bf0d",
+      "lastModificationDate": 1666470961614,
+      "contentHash": "a516234e00a87313de21c4d6409a6b91",
       "sourceName": "src/contracts/ERC721Connector.sol",
       "solcConfig": {
         "settings": {
@@ -83,12 +83,54 @@
       },
       "imports": [
         "src/contracts/ERC721.sol",
+        "src/contracts/ERC721Enumerable.sol",
         "src/contracts/ERC721Metadata.sol"
       ],
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ERC721Connector": {
           "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC721Connector.sol/ERC721Connector.json"
+        }
+      }
+    },
+    "src/contracts/ERC721Enumerable.sol": {
+      "lastModificationDate": 1666474491187,
+      "contentHash": "7c13381a6effab541539130b53582809",
+      "sourceName": "src/contracts/ERC721Enumerable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/contracts/ERC721.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC721Enunerable": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC721Enumerable.sol/ERC721Enunerable.json"
         }
       }
     },
@@ -132,7 +174,7 @@
       }
     },
     "src/contracts/KryptoBirdz.sol": {
-      "lastModificationDate": 1666206359726,
+      "lastModificationDate": 1666384949263,
       "contentHash": "a14696c5c03f6db4e039b9fbb74fe7eb",
       "sourceName": "src/contracts/KryptoBirdz.sol",
       "solcConfig": {
@@ -165,6 +207,7 @@
       "imports": [
         "src/contracts/ERC721.sol",
         "src/contracts/ERC721Connector.sol",
+        "src/contracts/ERC721Enumerable.sol",
         "src/contracts/ERC721Metadata.sol"
       ],
       "versionRequirement": "^0.8.0",
