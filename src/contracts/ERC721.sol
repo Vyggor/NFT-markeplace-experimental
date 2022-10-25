@@ -28,6 +28,10 @@ mapping(uint256 => address) private _tokenOwner;
 
 mapping(address => uint256) private _OwnedTokensCount;
 
+// Mapping from tokenId to approved addresses
+
+mapping(uint256 => address) private _tokenApprovals;
+
 function balanceOf(address _owner) public view returns(uint256) {
     require(_owner != address(0), "cant be 0 address");
       return _OwnedTokensCount[_owner];
@@ -59,7 +63,33 @@ function _mint(address to, uint256 tokenId) internal virtual {
     emit Transfer(address(0), to, tokenId);
 }
 
+    
+    ///  TO CONFIRM THAT `_to` IS CAPABLE OF RECEIVING NFTS OR ELSE
+    ///  THEY MAY BE PERMANENTLY LOST
+    /// @dev Throws unless `msg.sender` is the current owner, an authorized
+    ///  operator, or the approved address for this NFT. Throws if `_from` is
+    ///  not the current owner. Throws if `_to` is the zero address. Throws if
+    ///  `_tokenId` is not a valid NFT.
+    /// @param _from The current owner of the NFT
+    /// @param _to The new owner
+    /// @param tokenId The NFT to transfer
 
+    function _transferFrom(address _from, address _to, uint256 tokenId) internal{
+        require(_to != address(0) ,"error transfer to 0 address");
+        require(ownerOf(tokenId) == _from);
+        _tokenOwner[tokenId] = _to;
+        _OwnedTokensCount[_from] -= 1;
+        _OwnedTokensCount[_to] += 1;
+
+     emit Transfer(_from, _to, tokenId);
+
+    // this function is internal because it s the main transfer function not the callable one in our
+    //contract.
+    }
+
+    function transferFrom(address _from, address _to, uint256 tokenId) public payable {
+        _transferFrom(_from, _to, tokenId);
+    } // this is the actual callable function.
 
 
 }
